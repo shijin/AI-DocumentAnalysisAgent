@@ -90,3 +90,49 @@ The `sample_documents` folder contains a realistic 7-document vendor packet for 
 ### Environment variables
 
 Copy `.env.example` and fill in your values:
+
+ANTHROPIC_API_KEY=your_key_here
+GOOGLE_SERVICE_ACCOUNT_EMAIL=your_service_account@project.iam.gserviceaccount.com
+N8N_WEBHOOK_URL=https://your-n8n-domain.com
+
+### Import the workflow
+
+1. Open your n8n instance
+2. Go to Workflows and click Import
+3. Upload `workflow/vendor_risk_agent.json`
+4. Add your credentials for Claude HTTP Request, Google Sheets, and Gmail nodes
+5. Activate the workflow
+
+### Google Sheets setup
+
+Create a Google Spreadsheet with two sheets:
+- Sheet 1 named `Document Analysis`
+- Sheet 2 named `Packet Summary`
+
+---
+
+## Prompts
+
+The Claude prompts are in the `prompts` folder:
+
+- `system_prompt.md` - Main extraction prompt covering all 6 document types, 
+  extraction schemas, and flagging rules
+- `cross_doc_validation_prompt.md` - Cross-document conflict detection prompt
+
+---
+
+## Known limitations
+
+- Image files are flagged for manual review - OCR integration planned for v2
+- Fixed flag thresholds - configurable per organisation in v2
+- Single document type per file - multi-type document splitting in v2
+- Feedback loop is structural but not yet automated - v2 adds prompt refinement from reviewer corrections
+
+---
+
+## Built by
+
+Shijin - Product Manager with background in EdTech and AI products.
+Built as part of a technical assignment exploring agentic AI workflows for third-party risk management.
+
+---
