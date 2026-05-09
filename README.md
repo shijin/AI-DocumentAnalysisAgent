@@ -111,7 +111,7 @@ Create a Google Spreadsheet with two sheets:
 
 ---
 
-## Prompts
+### Prompts
 
 The Claude prompts are in the `prompts` folder:
 
@@ -121,12 +121,22 @@ The Claude prompts are in the `prompts` folder:
 
 ---
 
-## Known limitations
+### Known limitations
 
 - Image files are flagged for manual review - OCR integration planned for v2
 - Fixed flag thresholds - configurable per organisation in v2
 - Single document type per file - multi-type document splitting in v2
 - Feedback loop is structural but not yet automated - v2 adds prompt refinement from reviewer corrections
+
+---
+
+## Workflow Import
+
+The n8n workflow template is in `workflow/Vendor Document Analysis Agent.json`. 
+Before importing, add your own credentials for:
+- Anthropic API (HTTP Request nodes)
+- Google Sheets (Google Sheets nodes)
+- Gmail (Gmail node)
 
 ---
 
