@@ -26,7 +26,7 @@ A compliance team submits a vendor packet through a form. The agent handles ever
 
 ## Architecture
 
-![Workflow Architecture](docs/architecture_diagram.png)
+![Workflow Architecture](docs/architecture_diagram.JPG)
 
 The workflow has six phases:
 
@@ -52,7 +52,7 @@ The workflow has six phases:
 
 ## Sample output
 
-![Google Sheets Output](docs/sample_output.png)
+![Google Sheets Output](docs/sample_output.JPG)
 
 The agent produces two output sheets:
 
