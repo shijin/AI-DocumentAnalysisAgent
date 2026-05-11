@@ -9,6 +9,10 @@ An AI-powered document analysis agent for vendor onboarding and third-party risk
 This agent automates the first-pass review of vendor onboarding document packets. It reads every document submitted by a vendor, classifies each document type, extracts structured data, flags risks and anomalies and produces an actionable output in Google Sheets without any manual review.
 
 A compliance team submits a vendor packet through a form. The agent handles everything from that point of classification, extraction, risk flagging, cross-document conflict detection and escalation alerts.
+---
+## Video Walkthrough
+
+[Video Explanation](https://youtu.be/1rvziie_dy8)
 
 ---
 
